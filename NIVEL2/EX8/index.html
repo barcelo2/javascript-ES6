@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+
+        background-image: linear-gradient(to right bottom, #ffc2b4, #ff8882);
+      }
+
+      .input-fields {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        color: #194350;
+      }
+
+      .output-area {
+        width: 20%;
+        min-height: 30%;
+        color: #194350;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+      button {
+        text-transform: uppercase;
+        background-color: #194350;
+        color: #ffc2b4;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-fields">
+      <label for="no1">
+        <span>Enter first number :</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="numberFirst" type="number" min="1" max="10" required />
+      </label>
+
+      <label for="no2">
+        <span>Enter a range number :</span>
+        <input id="numberSecond" type="number" min="1" max="10" required />
+      </label>
+      <label for="button">
+        <button id="submit-btn" type="submit">Generate table</button>
+      </label>
+    </div>
+
+    <div class="output-area">
+      <h2 id="title-table"></h2>
+      <span id="table-data"></span>
+    </div>
+
+    <script src="../EX8/main.js"></script>
+  </body>
+</html>
